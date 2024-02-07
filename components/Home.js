@@ -11,7 +11,7 @@ function Home() {
 
   const [apiData, setapiData] = useState([]);
   useEffect(() => {
-  fetch('http://localhost:3000/movies')
+  fetch('https://backend-mymoviz-621p.vercel.app/movies')
   .then (response => response.json())
   .then(data => {
     setapiData(data.movies);
